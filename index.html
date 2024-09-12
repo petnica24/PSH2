@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Redirect</title>
+</head>
+<body>
+    <h1>Preusmeravanje na anketu...</h1>
+    <script>
+        // Lista URL-ova vaših anketa
+        const surveys = [
+            'https://docs.google.com/forms/d/1WKLWJ3Hub7s9d3FpouTm-t3aPW3Y3At3pFS_MA0N98s/edit',
+            'https://docs.google.com/forms/d/17KnaoRqznPXSAoKrYiIwUoA2PmGkhmWCkgGG74472Ok/edit',
+            'https://docs.google.com/forms/d/1KGrXmRZc3GT8lfZCme5Bl4smCgdqbnDVRDFPWSf9Wh4/edit',
+            'https://docs.google.com/forms/d/1qjVI2eIrfHkvkbohyHz-sl4nqWhVpCwV5i7cNPAcC0w/edit'
+        ];
+
+        // Nasumično biranje jednog URL-a
+        const randomIndex = Math.floor(Math.random() * surveys.length);
+        window.location.href = surveys[randomIndex];
+    </script>
+</body>
+</html>
